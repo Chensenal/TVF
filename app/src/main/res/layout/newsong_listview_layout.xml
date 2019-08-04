@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_newsong_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_newsong_display"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/iv_newsong_add"
+            />
+        <TextView
+            android:id="@+id/tv_newsong_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不染"
+            android:layout_toRightOf="@+id/iv_newsong_display"
+            />
+        <TextView
+            android:id="@+id/tv_newsong_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好"
+            android:layout_toRightOf="@+id/iv_newsong_display"
+            android:layout_below="@+id/tv_newsong_title"
+            />
+        <ImageView
+            android:id="@+id/iv_newsong_message"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@+id/iv_newsong_display"
+            android:layout_below="@+id/tv_newsong_content"
+            />
+        <TextView
+            android:id="@+id/tv_newsong_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_below="@+id/tv_newsong_content"
+            android:layout_toRightOf="@+id/iv_newsong_message"
+            />
+
+
+        <ImageView
+            android:id="@+id/iv_newsong_more"
+            android:layout_margin="11dp"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/tv_newsong_playtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刚刚"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_newsong_more"
+            />
+    </RelativeLayout>
+</LinearLayout>

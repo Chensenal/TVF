@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vedio_collect_root"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    >
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:padding="4dp"
+        android:src="@color/colorPrimaryDark"
+        android:id="@+id/iv_vedio_imageView" />
+
+
+    <TextView
+        android:id="@+id/tv_vedio_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="7483434343434"
+
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_vedio_viewcount"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+        <TextView
+            android:id="@+id/tv_vedio_viewcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:layout_toRightOf="@+id/iv_vedio_viewcount"
+            />
+        <ImageView
+            android:id="@+id/iv_vedio_play"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toRightOf="@+id/tv_vedio_viewcount"
+            />
+        <TextView
+            android:id="@+id/tv_vedio_playcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年的少的"
+            android:layout_toRightOf="@+id/iv_vedio_play"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
