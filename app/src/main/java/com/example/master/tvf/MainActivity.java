@@ -1,5 +1,6 @@
 package com.example.master.tvf;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -7,6 +8,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -17,10 +19,11 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import listenfragment.ListenFragment;
 import mefragment.MeFragment;
+import searchactivity.SearchActivity;
 import singfragment.SingFragment;
 import watchfragment.WatchFragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     @Bind(R.id.tab_layout)
     TabLayout tabLayout;
     @Bind(R.id.view_pager)
@@ -35,11 +38,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         search.setImageResource(R.drawable.search);
+        search.setOnClickListener(this);
         initFragment();
         initTitles();
         inintViewPager();
 
     }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.search:{
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        }
+    }
+
     private void initTitles(){
         titles = new ArrayList<>();
         titles.add("我");

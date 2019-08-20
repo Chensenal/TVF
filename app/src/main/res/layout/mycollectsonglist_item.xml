@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mycollectsonglist_iv_add"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/mycollectsonglist_tv_add"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mycollectsonglist_iv_add"
+            />
+        <TextView
+            android:layout_marginLeft="300dp"
+            android:id="@+id/mycollectsonglist_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mycollectsonglist_rl"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mycollectsonglist_iv_below"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/mycollectsonglist_tv_songlistcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/mycollectsonglist_iv_below"
+            />
+        <TextView
+            android:id="@+id/mycollectsonglist_tv_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="270dp"
+            />
+        <TextView
+            android:id="@+id/mycollectsonglist_tv_maneage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="360dp"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/mycollectsonglist_songlist_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+<TextView
+    android:layout_marginTop="10dp"
+    android:id="@+id/mycollectsonglist_yourlove_songlist"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/mycollectsonglist_songlist_love_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/mycollectsonglist_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -60,12 +60,6 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp">
 
-            <ImageView
-                android:layout_centerHorizontal="true"
-                android:id="@+id/iv_local_music"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@mipmap/ic_launcher"/>
             <TextView
                 android:layout_centerHorizontal="true"
                 android:id="@+id/tv_local_music"
@@ -84,6 +78,14 @@
                 android:text="0"
                 android:layout_centerHorizontal="true"
                 />
+
+            <ImageView
+                android:id="@+id/iv_local_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
         </RelativeLayout>
 
         <RelativeLayout

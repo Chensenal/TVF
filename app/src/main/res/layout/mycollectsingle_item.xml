@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/mycollect_single_iv_add"
+            android:layout_width="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/mycollect_single_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/mycollect_single_iv_add"
+            android:text="体面"
+            />
+        <TextView
+            android:id="@+id/mycollect_singl_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mycollect_single_iv_add"
+            android:layout_below="@id/mycollect_single_tv_title"
+            android:text="体面"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="320dp"
+            android:id="@+id/mycollect_single_iv_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="340dp"
+            android:id="@+id/mycollect_single_iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

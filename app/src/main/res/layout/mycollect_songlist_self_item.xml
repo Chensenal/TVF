@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_me_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/mycollect_iv_songlist"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                />
+            <TextView
+                android:id="@+id/mycollect_tv_songlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/mycollect_iv_songlist"
+                android:text="我喜欢"
+                android:textColor="#000"
+                />
+            <TextView
+                android:id="@+id/mycollect_tv_songlist_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0首,"
+                android:textColor="#000"
+                android:layout_toRightOf="@+id/mycollect_iv_songlist"
+                android:layout_below="@+id/mycollect_tv_songlist"/>
+            <TextView
+                android:id="@+id/mycollect_tv_songlist_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0首,"
+                android:textColor="#000"
+                android:layout_below="@+id/mycollect_tv_songlist"
+                android:layout_toRightOf="@+id/mycollect_tv_songlist_collect"/>
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/downloadmanagersingle_iv_now_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/downloadmanagersingle_tv_now_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/downloadmanagersingle_iv_now_stop"
+            />
+        <TextView
+            android:id="@+id/downloadmanagersingle_tv_now_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/downloadmanagersingle_tv_now_title"
+            android:layout_toRightOf="@+id/downloadmanagersingle_iv_now_stop"
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/downloadmanagersingle_fragmentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/main_tevi_v1"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" /> <!--进度条-->
+        <ProgressBar style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_pbr_pb1"
+            android:max="100" />
+    </FrameLayout>
+
+</LinearLayout>

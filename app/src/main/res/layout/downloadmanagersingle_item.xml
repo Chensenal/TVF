@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/downloadmanagersingle_iv_now_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/downloadmanagersingle_tv_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/downloadmanagersingle_iv_now_below"
+            />
+        <TextView
+            android:id="@+id/downloadmanagersingle_tv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/downloadmanagersingle_iv_total_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/downloadmanagersingle_tv_total_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/downloadmanagersingle_iv_total_start"
+            />
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/downloadmanagersingle_iv_total_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/downloadmanagersingle_tv_total_start"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/downloadmanagersingle_tv_total_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/downloadmanagersingle_iv_total_stop"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/downloadmanagersingle_now_recyclerview"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/downloadmanagersingle_iv_already_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/downloadmanagersingle_tv_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/downloadmanagersingle_iv_already_below"
+        />
+    <TextView
+        android:layout_marginLeft="280dp"
+        android:id="@+id/downloadmanagersingle_tv_already_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空"
+        />
+    <TextView
+        android:id="@+id/downloadmanagersingle_tv_already_chooose"
+        android:layout_marginLeft="320dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/downloadmanagersingle_already_recyclerview"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -7,35 +7,52 @@ import android.widget.ImageView;
  */
 
 public class SongList {
+    private int img;
+    private String username;
+    private String pinyin;
+    private String firstLetter;
 
-    private String SonglistText;
-    private int CollectCount;
-    private int Download;
 
 
-    public SongList(String SonglistText,int CollectCount,int Download) {
-        this.SonglistText = SonglistText;
-        this.CollectCount = CollectCount;
-        this.Download = Download;
+    public  SongList(){}
+    public SongList(String firstLetter,int img,String pinyin,String username){
 
-    }
-    public String getSonglistText() {
-        return SonglistText;
-    }
-    public void setSonglistText(String songlistText) {
-        SonglistText = songlistText;
-    }
-    public int getCollectCount() {
-        return CollectCount;
-    }
-    public void setCollectCount(int collectCount) {
-        CollectCount = collectCount;
-    }
-    public int getDownload() {
-        return Download;
-    }
-    public void setDownload(int download) {
-        Download = download;
+        this.firstLetter = firstLetter;
+        this.img = img;
+        this.pinyin = pinyin;
+        this.username = username;
+
     }
 
+    public int getImg() {
+        return img;
+    }
+
+    public String getFirstLetter() {
+        return firstLetter;
+    }
+
+    public String getPinyin() {
+        return pinyin;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setFirstLetter(String firstLetter) {
+        this.firstLetter = firstLetter;
+    }
+
+    public void setImg(int img) {
+        this.img = img;
+    }
+
+    public void setPinyin(String pinyin) {
+        this.pinyin = pinyin;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 }

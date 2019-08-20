@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/mycollectvedio_iv_display"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/mycollectvedio_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_toRightOf="@id/mycollectvedio_iv_display"
+        />
+    <TextView
+        android:id="@+id/mycollectvedio_tv_editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mycollectvedio_tv_title"
+        android:layout_toRightOf="@id/mycollectvedio_iv_display"
+        />
+</RelativeLayout>
