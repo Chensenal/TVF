@@ -96,7 +96,6 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
             switch (msg.what){
                 case Requestnews.WHAT_REQUEST_SUCCESS:{
 
-                    Log.e("listsdsds",list.size()+"");
                     break;
                 }default:{
                     //获取我们携带的数据
@@ -111,7 +110,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
                     break;
                 }
             }
-        };
+        }
     };
     private static SeekBar sbar;
     @Override

@@ -12,4 +12,5 @@ public class UrlPath {
     public static final String SEARCHMUISC = "http://192.168.43.154:8080//KuGouMusic/searchSongList";
     public static final String COLLECTMUSIC = "http://192.168.43.154:8080//KuGouMusic/collectServlet";
     public static final String ECHOCOLLECTMUSIC ="http://192.168.43.154:8080//KuGouMusic/collectEchoServlet";
+    public static final String ECHOCOLLECTMUSICUPDATE ="http://192.168.43.154:8080//KuGouMusic/collectEchoUpadteServlet";
 }

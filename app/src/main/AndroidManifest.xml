@@ -43,11 +43,7 @@
         <activity android:name="mefragment.activity.mycollectactivity.MyCollect"></activity>
         <activity android:name="mefragment.activity.downloadmanageractivity.DownloadManagerActivity"></activity>
         <activity android:name="mefragment.activity.loginactivity.LoginActivity"></activity>
-        <activity android:name="searchactivity.SearchActivity">
-
-
-
-        </activity>
+        <activity android:name="searchactivity.SearchActivity"></activity>
         <activity android:name="mefragment.activity.registeractivity.RegisterActivity"></activity>
 
         <service android:name="serviceutils.MusicService"></service>

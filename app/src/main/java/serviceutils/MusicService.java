@@ -23,7 +23,6 @@ import utilsbean.UrlPath;
  */
 
 public class MusicService extends Service {
-    boolean isStop = true;
     private MediaPlayer mediaPlayer;
 
     //[2]把我们定义的中间人对象返回
@@ -112,7 +111,7 @@ public class MusicService extends Service {
             }
         };
         //100 毫秒后 每隔1秒执行一次run方法
-        timer.schedule(task, 100, 1000);
+        timer.schedule(task, 300, 1000);
         //当歌曲执行完毕后 把timer 和 timertask取消
         //设置播放完成的监听
 
